@@ -1,13 +1,5 @@
 body {
-    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://i.ibb.co/10gwbpP/Whats-App-Image-2020-02-07-at-6-37-39-PM.jpg');
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./Image/georgetownfolo-1500x1000.jpg');
     background-attachment: fixed;
     background-size: 100% 100%;
-}
-
-@media only screen and (max-width: 400px) {
-    body {
-        background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://i.ibb.co/10gwbpP/Whats-App-Image-2020-02-07-at-6-37-39-PM.jpg');
-        background-attachment: fixed;
-        background-size: 100% 100%;
-    }
 }
