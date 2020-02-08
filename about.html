@@ -1,19 +1,74 @@
 <!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" type="text/css" href="background.css">
+<title>abhishek</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
 
-<html>
-    <link rel="stylesheet" type="text/css" href="background.css">
-    <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-        <script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="stylecontact.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <title>About</title>
-    </head>
-    <body>
-<div class="w3-container" id="About" style="margin-top:75px">
+<!-- Sidebar/menu  -->
+<nav class="w3-sidebar w3-cyan blue w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b></b></h3>
+  </div>
+  <div>
+    <img src="./Image/abhi1.jpeg" class="w3-circle" alt="Norway" style="width:75%;margin-bottom:23px;margin-top:-99px;">
+  </div>
+  <div>
+    <h2>Abhishek Pandey</h2>
+  </div>
+  <div class="w3-bar-block">
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home<a>
+    <a href="about.html" w3_close()" class="w3-bar-item w3-button w3-hover-white">About Me</a>
+    <a href="qual.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Qualification<a>
+    <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Abhishek Pandey</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header 
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+   
+    <hr style="width:50px;border:5px solid green" class="w3-round">
+  </div>-->
+  
+  <!-- Photo grid (modal) -->
+  <!-- <div class="w3-row-padding" id="home">
+    <div class="w3-half">
+      <img src="./Image/banner.jpg" class="" alt="banner">
+
+    </div>
+  </div> -->
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+  <div style="color: white; letter-spacing: 1px; font-family: sans-serif;" class="w3-container" id="About" style="margin-top:75px">
     <h1 class="w3-xxxlarge w3-text-green"><b>About Me.</b></h1>
     <hr style="width:50px;border:5px solid green" class="w3-round">
     <p>
@@ -23,22 +78,51 @@
       literature, publications and clinical reports information to conduct medical research. Strong research 
       professional with a Master's degree focused in Pharmacology from Georgetown University.
     </p>
-    <p>• Worked with Event Based Text-mining of Health Electronic Records (ETHER) system and actively participated in its evaluation, enhancement, and documentation
-      <p>• Designed the help system for the ETHER with the assistance of other fellows and collaborators in Office of Biostatistics and Epidemiology (OBE)
-        <p>• Performed annotation of temporal information in order to evaluate the algorithm designed to extract temporal information from clinical narratives of safety surveillance reports
-          <p>• Conducted ETHER qualitative error analysis by evaluating ETHER’s output and identifying its errors.
-            <p>• Led a project which involved Adverse Event Extraction from Structured Product Labels using the ETHER
-              <p>• Led a project for the Development of an Automated Service to Process Medical Texts
-                <p>• Conducted training on ETHER to incoming medical officers
-                  <p>• Currently participating in Development of a Natural Language Processing (NLP) Web Service to be hosted on the Public Health Community Platform (PHCP)
-                  </p>
-                </p>
-              </p>
-            </p>
-          </p>
-        </p>
-      </p>
-    </p>
+    <ul>
+        <li>Worked with Event Based Text-mining of Health Electronic Records (ETHER) system and actively participated in its evaluation, enhancement, and documentation</li>
+        <li>Designed the help system for the ETHER with the assistance of other fellows and collaborators in Office of Biostatistics and Epidemiology (OBE)</li>
+        <li>Performed annotation of temporal information in order to evaluate the algorithm designed to extract temporal information from clinical narratives of safety surveillance reports</li>
+        <li>Conducted ETHER qualitative error analysis by evaluating ETHER’s output and identifying its errors.</li>
+        <li>Led a project which involved Adverse Event Extraction from Structured Product Labels using the ETHER</li>
+        <li>Led a project for the Development of an Automated Service to Process Medical Texts</li>
+        <li>Conducted training on ETHER to incoming medical officers</li>
+        <li>Currently participating in Development of a Natural Language Processing (NLP) Web Service to be hosted on the Public Health Community Platform (PHCP)</li>
+    </ul>
+ 
   </div>
-  </body>
-  </html>
+
+  <!-- About -->
+ 
+  
+  <!-- qualification -->
+ 
+  
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:40%;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">Abhishek</a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
